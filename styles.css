@@ -1097,63 +1097,69 @@ html {
   }
 }
 
+/* Reset de layout básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout principal com padding */
+body {
+  padding: 10px;
+}
+
+/* Responsividade geral */
 @media (max-width: 768px) {
-  /* Diminuir fonte e garantir fluxo vertical coerente */
-  body {
-    font-size: 16px;
+  header,
+  nav,
+  main,
+  footer {
+    width: 100%;
+    display: block;
   }
 
-  /* Carrinho: fixo no rodapé, não sobrepõe o conteúdo */
-  #painelCarrinho {
+  .produto-card {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .produto-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .painel-carrinho {
     position: fixed !important;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    max-width: none;
-    height: auto;
+    background: white;
+    z-index: 999;
     max-height: 50vh;
     overflow-y: auto;
+    border-top: 2px solid #eee;
     padding: 15px;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
   }
 
-  /* Espaço no final para não esconder conteúdo atrás do carrinho */
+  /* Previne que o carrinho fique por cima do conteúdo */
   body::after {
     content: "";
     display: block;
-    height: 60px; /* mesmo tamanho do painel do carrinho */
-  }
-
-  /* Produtos: empilhamento limpo */
-  .produto-card {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-    margin: 0 0 20px 0 !important;
-  }
-
-  .produto-card img {
-    width: 100% !important;
-    height: auto !important;
-    margin-bottom: 10px;
-  }
-
-  .produto-card h3 {
-    margin: 10px 0 5px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .produto-card p {
-    text-align: center;
-    padding: 0 10px;
+    height: 250px;
   }
 
   button {
-    width: 100% !important;
-    margin-top: 10px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-
