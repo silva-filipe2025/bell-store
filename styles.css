@@ -1021,3 +1021,59 @@ html {
     margin: 5px 0;
 }
 
+
+/* Estilos para responsividade do celular*/
+
+/* Estilos gerais para desktop */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ajustes para telas menores (celulares) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu vertical */
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Exemplo para texto maior em celulares */
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .seu-container-flex {
+    flex-direction: column;
+  }
+}
