@@ -1,0 +1,1023 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Estilizando o body*/
+
+body {
+    background: linear-gradient(45deg, #ff99ee, #ff54aa);
+    /* Fundo com um degradê diagonal de roxo para rosa */
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Organiza os elementos em coluna (de cima para baixo) */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    font-family: 'poppins', sans-serif;
+    padding-top: 80px;
+    /* Para que o conteúdo não fique escondido atrás do cabeçalho fixo */
+}
+
+/* Estilizando o cabeçalho principal */
+
+.topo {
+    display: flex;
+    /* Deixa o conteúdo lado a lado: nome e menu */
+    justify-content: space-between;
+    /* Espaça o nome à esquerda e o menu à direita */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    background: linear-gradient(to right, #ff8ecf, #ff5eb0);
+    /* Fundo degradê rosa */
+    padding: 15px 40px;
+    /* Espaçamento interno (topo/baixo e laterais) */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave no fundo */
+    position: fixed;
+    /* Mantém o cabeçalho fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.nome-site {
+    font-family: 'poppins', sans-serif;
+    /* Fonte moderna e suave */
+    ;
+    font-size: 40px;
+    /* Tamanho grande para destaque */
+    letter-spacing: 15px;
+    /* Espaço entre as letras — faz parecer mais sofisticado */
+    color: rgb(255, 255, 255);
+    /* Cor branca para combinar com o fundo */
+    margin: 0;
+    /* Remove margem padrão */  
+    padding: 0;
+
+}
+
+.titulo-container {
+    display: flex; 
+    justify-content:flex-start;
+   align-items:center;
+    width: 100%;
+    padding: 0 40px;
+    
+}
+
+
+/* Estilizando o menu de navegação */
+
+nav ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+    display: flex;
+    /* Deixa os itens do menu alinhados na horizontal */
+}
+
+nav ul li {
+    margin-left: 20px;
+    /* Adiciona espaçamento entre os itens do menu */
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: black;
+    /* Define a cor do texto */
+    font-weight: bold;
+    /* Deixa os textos do menu em negrito */
+    display: inline-block;
+    /* Faz o link se comportar como um botão */
+    padding: 10px 20px;
+    /* Adiciona espaço interno */
+    background: rgb(255, 86, 185);
+    /* Cor de fundo (pode alterar) */
+    color: white;
+    /* Cor do texto */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    border-radius: 8px;
+    /* Arredonda os cantos */
+    transition: background 0.3s ease-in-out;
+    /* Efeito suave na mudança de cor */
+}
+
+/* Layout principal */
+
+main {
+    display: flex;
+    width: 100%;
+    /* Define a largura da seção principal */
+    margin-top: 10px;
+    /* Adiciona espaçamento superior */
+    flex-direction: column;
+    /* empilha as seções na vertical */
+}
+
+/* Caixa principal (lado esquerdo) */
+
+.ofertas-exclusivas {
+    flex: 2;
+    /* Ocupa 2 partes do espaço disponível */
+    background: white;
+    /* Fundo branco */
+    padding: 40px;
+    /* Adiciona preenchimento interno */
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
+    text-align: center;
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff); /* Degradê suave combinando com o rosa do site*/
+    
+}
+
+/* Caixa de encomendas (lado direito) */
+
+.encomendas {
+    flex: 1;
+    /* Ocupa 1 parte do espaço disponível */
+    background: white;
+    padding: 20px;
+    /* Adiciona preenchimento interno */
+    margin-left: 20px;
+    /* Adiciona espaçamento à esquerda */
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens no eixo horizontal */
+}
+
+/* Estilizando os botões */
+
+button {
+    border: none;
+     
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Estilizando o botão do WhatsApp */
+
+button:nth-child(2) {
+    background: #25d366;
+    /* Cor verde do WhatsApp */
+    ;
+    color: white;
+    /* Cor do texto branca */
+
+}
+
+/* Estilizando o botão do Instagram */
+
+button:nth-child(3) {
+    background: #e1306c;
+    /* Cor rosa do Instagram */
+    color: white;
+    /* Cor do texto branca */
+}
+
+
+/* Efeito de hover (quando o usuário passa o mouse) */
+nav ul li a:hover {
+    background: #ff0080;
+    /* Muda a cor ao passar o mouse */
+
+}
+
+
+/* Título da seção */
+.ofertas-exclusivas h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    /* Mantém as letras maiúsculas */
+}
+
+.titulo-secao {
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+.linha-decorativa {
+    width: 100px;
+    height: 4px;
+    background-color: #ff0080; /* Rosa vibrante igual ao site */
+    margin: 10px auto 30px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Container para os cards */
+.container-ofertas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaço entre os cards */
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Estilizando os cards */
+.card {
+    background: linear-gradient(to bottom, #ff85c1, #ffa6d9);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens dos produtos */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Nome do produto */
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Preço do produto */
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    display: block;
+    background: #25D366;
+    /* Cor do WhatsApp */
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: auto;
+    /* Isso faz ele ficar no final do card */
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-button:hover {
+    background: #1ebe5d;
+    transform: scale(1.03);
+}
+
+
+
+
+
+/* estilizando parte de depoimentos*/
+
+.depoimentos {
+
+    padding: 40px 20px;
+    /* Espaço interno (topo/baixo 40px, lados 20px) */
+    background: linear-gradient(45deg, #ff99ee, #ff54aa);
+    text-align: center;
+    /* Centraliza o título */
+    text-transform: uppercase;
+    /* Mantém as letras maiúsculas */
+    color: white;
+
+}
+
+/* Título da seção */
+
+.depoimentos h2 {
+    font-size: 1.8rem;
+    /* Tamanho da fonte grande */
+    color: #ffffff;
+    /* Cor rosa vibrante */
+    margin-bottom: 30px;
+    /* Espaço abaixo do título */
+    font-weight: bold;
+    /* Deixa o texto mais grosso */
+
+
+
+}
+
+/* Container que organiza os prints em colunas com grid */
+
+.containers-prints {
+
+    display: flex;
+    /* Coloca lado a lado */
+    flex-wrap: wrap;
+    /* Quebra pra linha de baixo se precisar */
+    gap: 20px;
+    /* Espaço entre as imagens */
+    justify-content: center;
+    /* Centraliza o conjunto de prints */
+    padding: 20px 0;
+}
+
+/* Estilo das imagens dos prints */
+
+.containers-prints img {
+    width: 200px;
+    /* Preenche toda a largura da coluna */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave ao redor */
+    transition: transform 0.3s ease;
+    /* Suaviza o efeito de zoom no hover */
+    border: 3px solid #ffffff;
+    /* Borda rosa */
+
+}
+
+/* Quando o mouse passa por cima do print */
+.containers-prints img:hover {
+    transform: scale(1.03);
+    /* Aumenta levemente a imagem (zoom) */
+    border-color: #ec4899;
+    /* Muda a cor da borda no hover */
+}
+
+.rodape {
+    background: linear-gradient(45deg, #ff99ee, #ff54aa);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+
+}
+
+
+.slogan {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.slogan h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+
+}
+
+.slogan p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+}
+
+.slogan a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+/* Estilizando o Banner Principal */
+.banner-principal {
+    background-image: url(Imagens/testelogo.jpg);
+    background-size: cover;
+    /* Faz a imagem preencher toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Não repete a imagem */
+    height: 500px;
+    /* Altura do banner - pode ajustar */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Permite usar ::before por cima */
+    text-align: center;
+    /* Centraliza o texto */
+    overflow: hidden;
+    /* Impede que a imagem ultrapasse os limites */
+    z-index: 2;
+    /* Garante que fique atrás do conteúdo */
+
+
+}
+
+/* Filtro escuro por cima da imagem para dar contraste */
+
+.banner-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Sombra escura transparente */
+    z-index: 1;
+}
+
+/* Estilo para o conteúdo dentro do banner */
+.banner-principal div {
+    color: white;
+    z-index: 2;
+    /* Fica acima do filtro escuro */
+
+}
+
+/* Parágrafo */
+.banner-principal p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.banner-principal a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5eb0;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover do botão */
+.banner-principal a:hover {
+    background-color: #ff0080;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilizando o como funciona*/
+
+.como-funciona {
+    background: linear-gradient(to bottom, #ff85c1, #ffa6d9);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.como-funciona h2 {
+    font-size: 32px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 30px;
+    /* Espaço inferior para afastar do conteúdo abaixo */
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+.passos-container {
+    display: flex;
+    /* Coloca os elementos lado a lado */
+    flex-wrap: wrap;
+    /* Permite que eles quebrem linha em telas menores */
+    justify-content: center;
+    /* Centraliza os itens no meio da tela */
+    gap: 30px;
+    /* Espaçamento entre os cards */
+}
+
+.passo {
+    background-color: white;
+    /* Fundo branco para destacar cada card */
+    color: #ff4fbf;
+    /* Cor do texto rosa da marca */
+    border-radius: 20px;
+    /* Cantos arredondados */
+    padding: 20px;
+    /* Espaço interno dentro do card */
+    width: 500px;
+    /* Largura fixa do card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra suave para dar profundidade */
+    transition: transform 0.3s ease;
+    /* Animação suave quando passar o mouse */
+}
+
+.passo:hover {
+    transform: scale(1.05);
+    /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+.passo img {
+    width: 50px;
+    /* Tamanho dos ícones */
+    margin-bottom: 15px;
+    /* Espaço entre o ícone e o título */
+}
+
+.passo h3 {
+    font-size: 20px;
+    /* Tamanho da fonte do título do card */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
+}
+
+.passo p {
+    font-size: 16px;
+    /* Tamanho da fonte do texto explicativo */
+}
+
+.frete-banner {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    color: #ffffff; /* Texto branco */
+
+    text-align:center;
+    /* Centraliza o texto */
+    padding: 10px 5px;
+    /* Espaço interno: cima/baixo */
+    font-weight:600;
+    /* Texto em negrito */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    margin-bottom: 0;
+    position: relative;
+    z-index: -2;
+    animation: slideDown 0.6s ease;
+    /* Animação suave */
+    
+     
+}
+
+
+/* Animação para deslizar de cima */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.banner-lateral {
+    position:fixed; /* Fica fixo na tela mesmo com scroll */
+    right: 0; /* Encostado na lateral direita */
+    top: 50%; /* Começa mais ou menos no meio da tela */
+    background: transparent ;
+    color: black; /* Texto branco */
+    padding: 50px 50px;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -1px 10px 5px rgba(0, 0, 0, 0.3);
+    animation: subirDescer 5s infinite ease-in-out;
+    z-index: 1000;
+}
+
+.banner-lateral span {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes subirDescer {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-0px);
+    }
+}
+
+/* Estiliza a seção inteira do catálogo */
+
+.catalogo { 
+    width: 100%;
+    padding: 60px 20px; /* Espaçamento interno: 60px em cima/baixo e 20px nas laterais */
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff); /* Degradê suave combinando com o rosa do site*/
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+/* Estilo do título principal da seção */
+
+.catalogo .titulo-secao {
+    font-size: 32px;  /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto (cinza escuro) */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-weight: 600; /* Deixa a fonte mais grossa (negrito leve) */
+}
+
+/* Linha decorativa abaixo do título */
+
+.catalogo .linha-decorativa { 
+    width: 80px; /* Largura da linha */
+    height: 4px; /* Espessura da linha */
+    background-color: #ff0080; /* Rosa vibrante igual ao site */
+    margin: 0 auto 40px auto; /* Centraliza e dá espaço abaixo da linha */
+    border: none; /* Remove bordas padrão */
+    border-radius: 2px; /* Arredonda as pontas da linha */
+}
+
+/* Contêiner das categorias */
+
+.categorias { 
+    display: flex;  /* Coloca as categorias lado a lado */
+    justify-content:center; /* Distribui igualmente as categorias com espaçamento entre elas */
+    gap:40px; /* Espaçamento entre as colunas */
+    flex-wrap: wrap; /* Permite que as categorias quebrem para baixo em telas pequenas */
+}
+
+/* Cada bloco de categoria */
+
+.categoria {
+    background-color: white; /* Fundo branco para destacar */
+    border-radius: 16px; /* Arredonda os cantos */
+    padding: 30px 20px; /* Espaçamento interno */
+    width: 250px; /* Largura fixa para cada bloco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+    display: flex;
+  
+}
+
+/* Efeito ao passar o mouse: eleva levemente a categoria */
+.categoria:hover {
+  transform: translateY(-5px); /* Sobe 5px */
+}
+
+/* Título da categoria */
+
+.categoria h3 {
+    color: #ff0080; /* Título rosa */
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+
+  }
+/* Lista de produtos */
+
+.categoria ul{ 
+    list-style: none; /* Remove bolinhas da lista */
+    padding: 0;  /* Remove preenchimento interno padrão */    
+}
+
+/* Cada item da lista */
+
+.categoria li {
+    margin: 5px 0;
+    color: #444;
+}
+
+/* Links de produto */
+
+.categoria a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333; /* Cor padrão do texto */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Quando passa o mouse no link */
+.categoria a:hover {
+  color: #e6007e; /* Muda pra rosa ao passar o mouse */
+  font-weight: 600; /* Deixa a fonte mais grossa */
+}
+
+.catalogo h2 { 
+    font-size: 2.5rem;  /* Tamanho grande pro título */
+    color: #333; /* Cor escura pra contraste */
+    font-weight: 700; /* Titulo em negrito*/
+    margin-bottom: 10px;
+    font-family: 'poppins', sans-serif;
+}
+
+.barra-categorias {
+    display: flex; /* Organiza os itens lado a lado na horizontal */
+    justify-content: center; /* Centraliza os itens no meio da barra */
+    gap: 40px; /* Espaçamento de 30px entre os itens */
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff); /* Degradê suave combinando com o rosa do site*/
+    padding: 20px 40px; /* Espaço interno (em cima, embaixo, nos lados) da barra */
+    border-radius: 15px; /* Arredonda as bordas da barra */
+    margin: -40px auto 30px; /* Espaço em cima/embaixo e centraliza horizontalmente */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave ao redor para dar profundidade */
+    position: relative;               /* Permite posicionamento ajustado */
+    z-index: 2;                       /* Garante que fique sobre elementos abaixo */
+}
+
+.categoria-link { 
+    display: flex; /* Exibe o conteúdo em bloco */
+    flex-direction: column; /* Um em cima do outro (ícone e texto) */
+    align-items: center; /* Centraliza os itens */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor do texto (cinza escuro) */
+    text-align: center; /* Centraliza texto e emoji dentro do link */
+
+    transition: transform 0.3s ease; /* Suaviza o efeito ao passar o mouse */
+}
+
+.categoria-link:hover {
+    transform: scale(1.1); /* Aumenta o item 10% quando passar o mouse (efeito de zoom) */
+    color: #e91e63; /* Muda a cor do texto para rosa vibrante no hover */
+}
+
+.icone {
+    font-size: 30px; /* Tamanho grande para os emojis */
+    display: block; /* Faz o emoji ocupar uma linha inteira, ficando acima do texto */
+    margin-bottom: 8px;
+}
+
+.texto { 
+    margin-top: 10px;  /* Espaço entre o emoji e o texto */
+    font-weight: 600; /* Deixa o texto em negrito leve */
+    font-family: 'poppins', sans-serif; /* Usa a fonte Poppins para manter o visual bonito */
+    color: #000;                     /* Cor preta para destacar */
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que os cards quebrem linha */
+    justify-content: center; /* Alinha os cards ao centro */
+    gap: 30px;               /* Espaçamento entre os cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+#contato {
+    scroll-margin-top: 200px ;
+    text-align: center;
+}
+
+.contato-container {
+    padding: 5px;
+    background: linear-gradient(to bottom, #ff85c1, #ffa6d9);
+    
+}
+
+.titulo-contato {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 2px;
+    
+}
+
+.contato-social {
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-insta {
+    background-color:#e91e63 ;
+}
+
+#contato img {
+    width: 150px;
+    border-radius: 30px;
+    
+    
+     
+}
+
+.contato-whats {
+    margin-top: 10px;
+}
+
+
+.chat-botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+  }
+  
+  .chat-janela {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 280px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-cabecalho {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .chat-mensagens {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+  
+  .chat-input {
+    display: flex;
+    border-top: 1px solid #eee;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+  }
+  
+  .chat-input button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  .mensagem-usuario {
+    text-align: right;
+    margin: 5px 0;
+  }
+  
+  .mensagem-bell {
+    text-align: left;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+
+
+  /* Estilo do botão de carrinho */
+.btn-carrinho { 
+    background-color: #f48fb1; /* Cor de fundo rosa claro */
+    color: rgb(255, 255, 255); /* Cor do texto: branca */
+    border: none; /* Remove a borda padrão */
+    padding: 8px 12px;  /* Espaçamento interno: 8px em cima/baixo e 12px nos lados */
+    margin-top: 5px;  /* Espaço acima do botão */
+    border-radius: 8px;  /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar o mouse */ 
+}
+
+/* Seção do carrinho */
+.carrinho {
+    background: #fff0f5;  /* Cor de fundo rosa bem clarinha (tom pastel) */
+    padding: 20px; /* Espaço interno (dentro da caixa) */
+    margin: 40px auto; /* Espaço externo acima/abaixo (40px), centraliza horizontalmente */
+    max-width: 600px; /* Largura máxima de 600px */
+    border-radius: 10px;  /* Bordas arredondadas (suaviza o retângulo) */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Sombra suave ao redor da caixa */
+}
+
+/* Título da seção */
+.carrinho h2 {
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Lista do carrinho */
+.carrinho ul {
+    list-style: none;  /* Remove os marcadores da lista (bolinhas ou números) */
+    padding-left: 0;   /* Remove o espaço padrão do lado esquerdo da lista */
+}
+
+/* Cada item do carrinho */
+.carrinho li {
+    margin-bottom:10px;  /* Espaço entre um item e outro da lista */
+    font-size: 16px;  /* Tamanho da fonte dos itens */
+}
+
+/* Estilo do botão do carrinho fixo */
+.carrinho-fixo {
+    position: fixed;                /* Fixa o botão na tela, mesmo rolando a página */
+    top: 20px;                      /* Distância do topo da tela: 20px */
+    right: 20px;                    /* Distância da lateral direita: 20px */
+    background: #ff69b4;            /* Cor de fundo rosa (pink chic Bell Store 🌸) */
+    color: white;                   /* Cor do texto */
+    padding: 10px 15px;             /* Espaçamento interno: 10px em cima/baixo, 15px nas laterais */
+    border-radius: 20px;            /* Cantos arredondados como uma cápsula */
+    cursor: pointer;                /* Mostra uma mãozinha ao passar o mouse */
+    font-weight: bold;              /* Texto em negrito */
+    z-index: 1000;                   /* Garante que o botão fique por cima de outros elementos */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra suave ao redor */
+    transition: transform 0.2s ease;
+}
+
+.carrinho-fixo:hover {
+    transform: scale(1.05);    /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo do painel lateral do carrinho */
+.painel-carrinho {
+    position: fixed;                 /* Fixa o painel na lateral da tela */
+    top: 0;                          /* Alinha com o topo da página */
+    right: -300px;                   /* Começa fora da tela, "escondido" à direita */
+    width: 300px;                    /* Largura do painel lateral */
+    height: 100%;                    /* Altura total da tela (do topo até o final) */
+    background: #fff;                /* Cor de fundo branca */
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2); /* Sombra do lado esquerdo para parecer flutuante */
+    transition: right 0.3s ease;     /* Animação suave ao aparecer/desaparecer */
+    z-index: 1001;                   /* Fica por cima de quase tudo */
+    padding: 20px;
+    overflow-y: auto; /* Permite rolar se houver muitos itens */
+}
+
+/* Conteúdo do painel do carrinho */
+.painel-carrinho-conteudo {
+    padding: 20px;                  /* Espaçamento interno de 20px em todos os lados */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do título no painel */
+.painel-carrinho-conteudo h2 {
+    margin-top: 0;                  /* Remove o espaço padrão em cima do título */
+}
+
+/* Botão de fechar painel */
+.fechar-painel {
+    float: right;                   /* Alinha o X no canto direito */
+    cursor: pointer;                /* Muda para mãozinha ao passar o mouse */
+    font-size: 20px;                /* Tamanho maior para o X */
+}
+
+.btn-whatsapp-fixo {
+    background-color:#25d366; 
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.avaliacao {
+    font-size: 18px;
+    color: #FFD700; /* cor dourada das estrelas */
+    margin: 5px 0;
+}
+

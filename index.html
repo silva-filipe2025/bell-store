@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Bell Store</title>
+
+    <link rel="stylesheet" href="styles.css"> <!--vinculando o html ao css-->
+</head>
+
+<body>
+
+
+    <!-- Banner de Frete Grátis -->
+
+    <div class="frete-banner">
+        <p>🚚 Frete Grátis para todo o Brasil em compras acima de R$199,00!</p>
+    </div>
+
+    <!--Cabeçaçho-->
+    <header class="topo">
+
+        <div class="titulo-container">
+
+            <h1 class="nome-site"> BELL STORE </h1>
+
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#encomendar">Encomendar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--div class="banner-lateral">
+        <p><strong>CUPOM:</strong>  <span>10% OFF</span><br>BELL10</p>
+    </div-->
+
+    <!-- Banner Principal -->
+    <section class="banner-principal">
+
+        <div class="slogan">
+            <h1>Moda com Estilo, Conforto e Preço justo</h1>
+            <p>Esqueça as regras, se você gosta, use!</p>
+            <a href="#catalogo" class="botao-banner">Ver Catálogo</a>
+
+        </div>
+    </section>
+
+    <!-- Seção Catálogo -->
+
+    <section id="catalogo" class="catalogo">
+        <!-- id="catalogo" serve para o botão "Ver Catálogo" no banner te levar até aqui -->
+        <!-- class="catalogo" é usada para aplicar estilos via CSS -->
+
+        <div class="barra-categorias">
+            <a href="#tenis" class="categoria-link">
+                <span class="icone">👟</span>
+                <span class="texto">Tênis</span>
+            </a>
+
+            <a href="#roupas" class="categoria-link">
+                <span class="icone">👕</span>
+                <span class="texto">Roupas</span>
+            </a>
+
+            <a href="#Bolsas" class="categoria-link">
+                <span class="icone">👜</span>
+                <span class="texto">Bolsas</span>
+
+            </a>
+
+
+        </div>
+
+        <h2 class="titulo-secao">Catálogo</h2> <!-- Título da seção, que pode ser estilizado com CSS -->
+        <hr class="linha-decorativa"> <!-- Linha decorativa abaixo do título (estética) -->
+
+        <div class="categorias">
+            <!-- Aqui vamos separar os produtos por categorias -->
+
+            <!-- Card 1 -->
+            <div class="container-produtos">
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Tenis love rosa.jpg">
+                    <h3>Tênis Love Rosa</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 89,90</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-love-rosa">Tamanho:
+                        <select id="tamanho-love-rosa">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Love Rosa', 89.90, 'Imagens/Fotos produtos/Tenis love rosa.jpg', 'tamanho-love-rosa')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20tênis%20Nike%20Air%20Max"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Tenis caminhada.jpg">
+                    <h3>Tênis Caminhada</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 110,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-caminhada">Tamanho:
+                        <select id="tamanho-tenis-caminhada">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Caminhada', 110.00,' Imagens/Fotos produtos/Tenis caminhada.jpg','tamanho-tenis-caminhada')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20tênis%20Caminhada%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Tenis O2x esportivo.jpg">
+                    <h3>Tênis O2X Esportivo</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 85,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-o2x">Tamanho:
+                        <select id="tamanho-tenis-o2x">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis O2X Esportivo', 85.00,' Imagens/Fotos produtos/Tenis O2x esportivo.jpg', 'tamanho-tenis-o2x')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20tênis%20Nike%20Air%20Max"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 2 -->
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Tenis puma branco e rosa.jpg">
+                    <h3> Tênis Puma Rosa/Branco</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐⭐</div>
+                    <p>R$ 120,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-puma-branco-rosa">Tamanho:
+                        <select id="tamanho-puma-branco-rosa">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Puma Rosa', 120.00,' Imagens/Fotos produtos/Tenis puma branco e rosa.jpg','tamanho-puma-branco-rosa')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20tênis%20Nike%20Air%20Max"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 3-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Tenis bufalo Azul marinho.jpg">
+                    <h3> Tênis Búfalo Azul Marinho</h3>
+                    <div class="avaliacao">⭐⭐⭐⭐⭐</div>
+                    <p>R$ 95,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-bufalo">Tamanho:
+                        <select id="tamanho-tenis-bufalo">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Búfalo Azul Marinho', 95.00,' Imagens/Fotos produtos/Tenis bufalo Azul marinho.jpg','tamanho-tenis-bufalo')">Adicionar
+                        ao Carrinho</button>
+
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20tênis%20Nike%20Air%20Max"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!-- card 4 -->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/pumavermelho.jpeg">
+                    <h3>Tênis Puma Vinho Cinza</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 110,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-Puma-Vinho">Tamanho:
+                        <select id="tamanho-tenis-Puma-Vinho">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Puma Vinho Cinza', 110.00,' Imagens/Fotos produtos/pumavermelho.jpeg','tamanho-tenis-Puma-Vinho')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Vinho e Cinza%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 5-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/puma rosa.jpeg">
+                    <h3>Tênis Puma Rosa</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 110,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-puma-rosa">Tamanho:
+                        <select id="tamanho-tenis-Puma-rosa">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Puma Rosa', 110.00,' Imagens/Fotos produtos/puma rosa.jpeg','tamanho-tenis-Puma-rosa')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 6-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/puma preto.jpeg">
+                    <h3>Tênis Puma Preto</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 110,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-puma-preto">Tamanho:
+                        <select id="tamanho-tenis-puma-preto">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Puma Preto', 110.00,' Imagens/Fotos produtos/puma preto.jpeg','tamanho-tenis-puma-preto')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 7-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/adidasazul.jpeg">
+                    <h3>Tênis Adidas Azul</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 115,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-adidas-azul">Tamanho:
+                        <select id="tamanho-tenis-adidas-azul">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Adidas Azul', 115.00,' Imagens/Fotos produtos/adidasazul.jpeg','tamanho-tenis-adidas-azul')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+
+                <!--Card 7-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/adidasazulcinza.jpeg">
+                    <h3>Tênis Adidas Preto/Cinza</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 115,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-adidas-preto-cinza">Tamanho:
+                        <select id="tamanho-tenis-adidas-preto-cinza">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Adidas Preto/Cinza', 115.00,' Imagens/Fotos produtos/adidasazulcinza.jpeg','tamanho-tenis-adidas-preto-cinza')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 8-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/adidascampus.jpeg">
+                    <h3>Tênis Adidas Campus</h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-adidas-campus">Tamanho:
+                        <select id="tamanho-tenis-adidas-campus">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('Tênis Adidas Campus', 125.00,' Imagens/Fotos produtos/adidascampus.jpeg','tamanho-tenis-adidas-campus')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 9-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/adidasvelcopreto.jpeg">
+                    <h3>Tênis Adidas Velcron </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-adidas-velcron">Tamanho:
+                        <select id="tamanho-tenis-adidas-velcron">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-adidas-velcron', 125.00,' Imagens/Fotos produtos/adidasvelcopreto.jpeg','tamanho-tenis-adidas-velcron')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 10-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/allstar branco.jpeg">
+                    <h3>Tênis allstar Branco </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-allstar-branco">Tamanho:
+                        <select id="tamanho-tenis-allstar-branco">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-allstar-branco', 125.00,' Imagens/Fotos produtos/allstar branco.jpeg','tamanho-tenis-allstar-branco')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 10-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/allstarpreto.jpeg">
+                    <h3>Tênis allstar Preto </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-allstar-preto">Tamanho:
+                        <select id="tamanho-tenis-allstar-preto">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-allstar-preto', 125.00,' Imagens/Fotos produtos/allstarpreto.jpeg','tamanho-tenis-allstar-preto')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 10-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/allstarvermelho.jpeg">
+                    <h3>Tênis allstar Preto </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-allstar-vermelho">Tamanho:
+                        <select id="tamanho-tenis-allstar-vermelho">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-allstar-vermelho', 125.00,' Imagens/Fotos produtos/allstarvermelho.jpeg','tamanho-tenis-allstar-vermelho')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 10-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/adidaspreto.jpeg">
+                    <h3>Tênis Adidas Preto </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-adidas-preto">Tamanho:
+                        <select id="tamanho-tenis-adidas-preto">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-adidas-preto', 125.00,' Imagens/Fotos produtos/adidaspreto.jpeg','tamanho-tenis-adidas-preto')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 11-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikepreto rosa.jpeg">
+                    <h3>Tênis Nike Preto/Rosa </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-nike-preto-rosa">Tamanho:
+                        <select id="tamanho-tenis-nike-preto-rosa">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-nike-preto-rosa', 125.00,' Imagens/Fotos produtos/nikepreto rosa.jpeg','tamanho-tenis-nike-preto-rosa')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 11-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikebrancorosa.jpeg">
+                    <h3>Tênis Nike Branco/Rosa </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-nike-branco-rosa">Tamanho:
+                        <select id="tamanho-tenis-nike-branco-rosa">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-nike-branco-rosa', 125.00,' Imagens/Fotos produtos/nikebrancorosa.jpeg','tamanho-tenis-nike-branco-rosa')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 12-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikepretoalto.jpeg">
+                    <h3>Tênis Nike Preto </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-nike-preto">Tamanho:
+                        <select id="tamanho-tenis-nike-preto">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-nike-preto', 125.00,' Imagens/Fotos produtos/nikepretoalto.jpeg','tamanho-tenis-nike-preto')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <!--Card 13-->
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikesalmon.jpeg">
+                    <h3>Tênis Nike Bege/Preto </h3>
+                    <!-- Estrelas de avaliação -->
+                    <div class="avaliacao">⭐⭐⭐⭐☆</div>
+                    <p>R$ 125,00</p>
+
+                    <!-- Seletor de tamanhos -->
+                    <label for="tamanho-tenis-nike-bege-preto">Tamanho:
+                        <select id="tamanho-tenis-nike-bege-preto">
+                            <option value="">Selecione</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                        </select>
+                    </label>
+                    <button class="btn-carrinho"
+                        onclick="adicionarAoCarrinhoComTamanho('tamanho-tenis-nike-bege-preto', 125.00,' Imagens/Fotos produtos/nikesalmon.jpeg','tamanho-tenis-nike-bege-preto')">Adicionar
+                        ao Carrinho</button>
+
+                    <a href="https://wa.me/551194777879?text=Olá!%20Tenho%20interesse%20neste%20Puma Rosa%20%20"
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+    <!--Area principal-->
+
+    <!--main>
+        <section class="ofertas-exclusivas">
+            <h2 class="titulo-secao">Ofertas Exclusivas</h2>
+            <hr class="linha-decorativa">
+
+            <div class="container-ofertas">
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Adidas3listras.jpeg">
+                    <h3>Tênis Adidas 3 listras</h3>
+                    <p>De <s>R$ 150,00</s> por <strong>R$ 105,00</strong></p>
+                    
+                    <a href="https://wa.me/5511947778799?text=Olá!%20Tenho%20interesse%20neste%20produto."
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Adidascolorido.jpeg">
+                    <h3>Tênis Adidas Colorido</h3>
+                    <p>De <s>R$ 150,00</s> por <strong>R$ 120,00</strong></p>
+                    <a href="https://wa.me/5511947778799?text=Olá!%20Tenho%20interesse%20neste%20produto."
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/Nike-preto.jpeg">
+                    <h3>Tênis Nike AirForce Preto</h3>
+                    <p>De <s>R$ 150,00</s> por <strong>R$ 95,00</strong></p>
+                    <a href="https://wa.me/5511947778799?text=Olá!%20Tenho%20interesse%20neste%20produto."
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikeairforce2.jpeg">
+                    <h3>Tênis Nike AirForce Branco</h3>
+                    <p>De <s>R$ 150,00</s> por <strong>R$ 95,00</strong></p>
+                    <a href="https://wa.me/5511947778799?text=Olá!%20Tenho%20interesse%20neste%20produto."
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/Fotos produtos/nikebege.jpeg">
+                    <h3>Tênis Nike Bege</h3>
+                    <p>De <s>R$ 160,00</s> por <strong>R$ 135,00</strong></p>
+                    <a href="https://wa.me/5511947778799?text=Olá!%20Tenho%20interesse%20neste%20produto."
+                        class="whatsapp-button" target="_blank">
+                        Comprar Agora
+                    </a>
+
+
+                </div-->
+    </div>
+    </section>
+
+    <section class="como-funciona">
+        <h2>Como Funciona</h2>
+        <div class="passos-container">
+            <div class="passo">
+                <img src="https://img.icons8.com/ios-filled/50/shopping-cart.png" alt="Escolha o produto">
+                <h3>1. Escolha seu produto</h3>
+                <p>Navegue pelo nosso "catálogo" e encontre o que você ama!</p>
+            </div>
+
+            <div class="passo">
+                <img src="https://img.icons8.com/ios-filled/50/whatsapp.png" alt="Fale conosco no WhatsApp">
+                <h3>2. Fale Conosco</h3>
+                <p>Clique em "comprar agora" e fale com a gente no Whatsapp. </p>
+
+            </div>
+
+            <div class="passo">
+                <img src="https://img.icons8.com/ios-filled/50/delivery.png" alt="Receba em casa">
+                <h3>3. Receba em casa</h3>
+                <p>Enviamos seu pedido com carinho e rapidez.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="contato-container">
+
+        <section id="contato">
+            <img src="Imagens/Foto blogueira.jpg" alt="Foto Bel">
+            <h2 class="titulo-contato">Entre em Contato</h2>
+            <p class="contato-social">Instagram: @bellstore.r</p>
+            <button class="btn-insta">Ir para Instagram</button>
+
+            <p class="contato-whats">WhatsApp: 11-94777-8799</p>
+            <a href="https://wa.me/5511947778799" target="_blank">
+                <button class="btn-whatsapp">Enviar Whatsapp</button>
+            </a>
+        </section>
+
+    </div>
+
+
+    <!-- Seção de Depoimentos-->
+
+    <section class="depoimentos">
+        <h2>O que dizem nossos clientes</h2>
+
+        <div class="containers-prints">
+
+            <img src="Imagens/Feedbacks/Feedback (1).jpeg" alt="depoimento1">
+            <img src="Imagens/Feedbacks/Feedback (2).jpeg " alt="depoimento2">
+            <img src="Imagens/Feedbacks/Feedback (3).jpeg" alt="depoimento3">
+            <img src="Imagens/Feedbacks/Feedback (4).jpeg" alt="depoimento4">
+            <img src="Imagens/Feedbacks/Feedback (5).jpeg" alt="depoimento5">
+            <img src="Imagens/Feedbacks/Feedback (6).jpeg" alt="depoimento6.">
+            <img src="Imagens/Feedbacks/Feedback (7).jpeg" alt="depoimento7">
+            <img src="Imagens/Feedbacks/Feedback (8).jpeg" alt="depoimento8">
+            <img src="Imagens/Feedbacks/Feedback (9).jpeg" alt="depoimento9">
+
+
+        </div>
+    </section>
+
+    </main>
+
+
+    <!-- Ícone do Carrinho (fixo no canto) -->
+
+    <div class="carrinho-fixo" onclick="toggleCarrinho()">
+        🛒 Carrinho (<span id="quantidade-carrinho">0</span>)
+
+    </div>
+
+    <!-- Painel Lateral do Carrinho -->
+
+    <div id="painelCarrinho" class="painel-carrinho">
+        <div class="painel-carrinho-conteudo">
+            <span class="fechar-painel" onclick="toggleCarrinho()">x</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho"></ul>
+            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+
+            <!-- Linha do desconto-->
+            <p id="desconto-aplicado" style="color: green; font-weight: bold; display: none;">
+                Você economizou: R$ <span id="valor-desconto">0.00</span> 🤑
+            </p>
+
+            <!--Area do cupom-->
+
+            <div id="cupom-area" style="margin-top:10px">
+                <input type="text" id="input-cupom" placeholder="Digite seu cupom"
+                    style="padding:5px; border-radius: 5px; border: 1px solid #ccc;">
+                <button onclick="aplicarCupom()"
+                    style="padding: 5px 10px; margin-left: 5px; border: none; background-color: #ff4081; color:white; border-radius:5px; cursor:pointer;">
+                    Aplicar Cupom
+                </button>
+            </div>
+            <button onclick="limparCarrinho()">Limpar Carrinho</button>
+
+
+            <BUTTON onclick="toggleCarrinho()"
+                style="margin-top: 20px; padding: 10px 20px; background-color:#ff4081; color: rgb(0, 0, 0); border: none; border-radius: 5px; cursor: pointer ;">
+                Continuar comprando
+            </BUTTON>
+
+            <!-- Campo de endereço -->
+
+            <label for="endereco" style="display: block; margin-top: 10px;">Endereço para entrega:</label>
+            <input type="text" id="endereco" placeholder="Digite seu endereço completo"
+                style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+
+                
+            <!-- Botão para enviar pedido via WhatsApp -->
+
+            <!-- Área que mostra o código Pix -->
+<div id="areaPix" style="display: none; margin: 10px 0; font-weight: bold;">
+    Chave Pix Banco Stone: <span id="codigoPix">---</span>
+  </div>
+  
+  <!-- Botão de gerar código Pix -->
+  <button id="btnPix" onclick="gerarCodigoPix()">💳 Gerar código Pix</button>
+  
+  <!-- Botão de WhatsApp (inicialmente escondido) -->
+  <button id="btnWhatsApp" style="display: none;" onclick="enviarPedidoWhatsApp()">📲 Enviar pedido via WhatsApp</button>
+  
+  </div>
+  </div>
+
+  <script>
+    let pixGerado = false;
+  
+    function gerarCodigoPix() {
+      if (pixGerado) return;
+  
+      const chavePix = "11947778799"; // Sua chave Pix real
+      const nomeLoja = "Bell Store";
+      const cidade = "SAO PAULO";
+  
+      const total = parseFloat(document.getElementById("total-carrinho").textContent) || 0;
+  
+      const codigo = gerarPixReal(chavePix, nomeLoja, cidade, total);
+  
+      document.getElementById("codigoPix").textContent = codigo;
+      document.getElementById("areaPix").style.display = "block";
+      document.getElementById("btnPix").style.display = "none";
+      document.getElementById("btnWhatsApp").style.display = "inline-block";
+  
+      pixGerado = true;
+    }
+  
+    function enviarPedidoWhatsApp() {
+        
+      const carrinhoItens = JSON.parse(localStorage.getItem("carrinho")) || [];
+      if (carrinhoItens.length === 0) {
+        alert("Seu carrinho está vazio.");
+        return;
+      }
+  
+      const endereco = document.getElementById("endereco").value.trim();
+      if (!endereco) {
+        alert("Digite seu endereço");
+        return;
+      }
+  
+      let mensagem = "*🛒 Pedido Bell Store:*\n";
+      carrinhoItens.forEach((item, i) => {
+        mensagem += `${i + 1}. ${item.nome} - R$${item.preco.toFixed(2)}\n`;
+      });
+  
+      const pix = document.getElementById("codigoPix").textContent;
+      mensagem += `\nPix para pagamento: ${pix}\nEndereço: ${endereco}`;
+  
+      const telefone = "5511947778799"; // Seu número WhatsApp com DDI
+      const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, "_blank");
+  
+      // Reset UI
+      document.getElementById("areaPix").style.display = "none";
+      document.getElementById("btnWhatsApp").style.display = "none";
+      document.getElementById("btnPix").style.display = "inline-block";
+      document.getElementById("codigoPix").textContent = "---";
+      pixGerado = false;
+  
+      // Limpa carrinho e endereço se quiser
+      localStorage.removeItem("carrinho");
+      document.getElementById("endereco").value = "";
+    }
+  
+    // Função que gera o código Pix real (copia e cola)
+    function gerarPixReal(chavePix, nome, cidade, valor) {
+      valor = parseFloat(valor).toFixed(2);
+  
+      let payload = "";
+      payload += "000201";
+      payload += "26580014BR.GOV.BCB.PIX01";
+      payload += "36" + chavePix.length.toString().padStart(2, "0") + chavePix;
+      payload += "52040000";
+      payload += "5303986";
+      payload += "54" + valor.length.toString().padStart(2, "0") + valor;
+      payload += "5802BR";
+      payload += "59" + nome.length.toString().padStart(2, "0") + nome;
+      payload += "60" + cidade.length.toString().padStart(2, "0") + cidade;
+      payload += "62070503***";
+      payload += "6304";
+  
+      const crc = calcularCRC(payload);
+      return payload + crc;
+    }
+  
+    // Função para calcular CRC16 do Pix
+    function calcularCRC(str) {
+      let crc = 0xFFFF;
+      for (let i = 0; i < str.length; i++) {
+        crc ^= str.charCodeAt(i) << 8;
+        for (let j = 0; j < 8; j++) {
+          if ((crc & 0x8000) !== 0) {
+            crc = (crc << 1) ^ 0x1021;
+          } else {
+            crc <<= 1;
+          }
+        }
+      }
+      return ((crc ^ 0x0000) & 0xFFFF).toString(16).toUpperCase().padStart(4, "0");
+    }
+  </script>
+
+       <!-- Aqui no final do body, antes do fechamento da tag, coloque o script JS -->
+  <script>
+    let pixVisivel = false;
+
+    function gerarCodigoPix() {
+      const codigoPix = "11947778799"; // sua chave Pix
+
+      if (!pixVisivel) {
+        // Mostrar código Pix
+        document.getElementById("codigoPix").textContent = codigoPix;
+        document.getElementById("areaPix").style.display = "block";
+
+        // Mostrar botão WhatsApp
+        document.getElementById("btnWhatsApp").style.display = "inline-block";
+
+        pixVisivel = true;
+      } else {
+        // Esconder código Pix e botão WhatsApp
+        document.getElementById("areaPix").style.display = "none";
+        document.getElementById("btnWhatsApp").style.display = "none";
+
+        pixVisivel = false;
+      }
+    }
+
+    function enviarPedidoWhatsApp() {
+      const carrinhoItens = JSON.parse(localStorage.getItem("carrinho")) || [];
+      const codigoPix = document.getElementById("codigoPix").textContent;
+
+      let mensagem = "Pedido:\n";
+      carrinhoItens.forEach((item, index) => {
+        mensagem += `${index + 1}. ${item.nome} - R$${item.preco}\n`;
+      });
+      mensagem += `\nPix para pagamento: ${codigoPix}`;
+
+      const textoURL = encodeURIComponent(mensagem);
+      const numeroWhatsApp = "5511947778799"; // seu número aqui
+
+      window.open(`https://wa.me/${numeroWhatsApp}?text=${textoURL}`, "_blank");
+    }
+  </script>
+
+
+        <!-- Rodapé do site -->
+        <footer class="rodape">
+            <p>&copy; 2025 Bell Store - Todos os direitos reservados.</p>
+        </footer>
+
+        <div class="chat-botao" onclick="abrirChat()">💬 Fale com a Bell</div>
+
+        <div class="chat-janela" id="chatBox" style="display: none;">
+            <div class="chat-cabecalho">👩‍💼 Bell Store Online 🟢</div>
+            <div class="chat-mensagens" id="chatMensagens">
+                <div class="mensagem-bell">Olá! Posso te ajudar em algo? 💖</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="mensagemInput" placeholder="Digite sua mensagem..." />
+                <button onclick="enviarMensagem()">Enviar</button>
+
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
