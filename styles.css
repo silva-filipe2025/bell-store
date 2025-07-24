@@ -47,19 +47,24 @@ body {
 }
 
 .nome-site {
-    font-family: 'poppins', sans-serif;
-    /* Fonte moderna e suave */
-    ;
-    font-size: 40px;
-    /* Tamanho grande para destaque */
-    letter-spacing: 15px;
-    /* Espaço entre as letras — faz parecer mais sofisticado */
-    color: rgb(255, 255, 255);
-    /* Cor branca para combinar com o fundo */
-    margin: 0;
-    /* Remove margem padrão */  
-    padding: 0;
+    
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px; /* menor para desktop */
+  letter-spacing: 6px; /* reduzido */
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap; /* evita quebrar em 2 linhas */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+@media (max-width: 768px) {
+  .nome-site {
+    font-size: 22px; /* menor no celular */
+    letter-spacing: 3px;
+  }
 }
 
 .titulo-container {
