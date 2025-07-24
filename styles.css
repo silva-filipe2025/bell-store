@@ -1021,4 +1021,41 @@ html {
     margin: 5px 0;
 }
 
+/* ======== Responsividade para celular ======== */
+@media (max-width: 768px) {
+
+  /* Ajuste geral para containers */
+  .container, .seu-container-principal {
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  /* Menu: mudar para vertical */
+  nav ul {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  nav ul li {
+    text-align: center !important;
+  }
+
+  /* Imagens */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Ajuste fontes */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  p, span, li {
+    font-size: 1rem !important;
+  }
+
+  /* Qualquer ajuste que achar necessário */
+}
+
 
