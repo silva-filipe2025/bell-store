@@ -249,12 +249,14 @@ nav ul li a:hover {
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 260px;
+    width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     overflow: hidden;
+    
+   
 }
 
 /* Efeito ao passar o mouse */
@@ -265,9 +267,11 @@ nav ul li a:hover {
 
 /* Imagens dos produtos */
 .card img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 
 }
 
@@ -1005,11 +1009,6 @@ html {
     font-size: 20px;                /* Tamanho maior para o X */
 }
 
-.painel-carrinho.fechado {
-  display: none;
-  /* Ou use transform: translateX(100%) para animação */
-}
-
 .btn-whatsapp-fixo {
     background-color:#25d366; 
     color: white;
@@ -1025,7 +1024,6 @@ html {
     color: #FFD700; /* cor dourada das estrelas */
     margin: 5px 0;
 }
-
 
 
 

@@ -359,17 +359,6 @@ function enviarPedidoWhatsApp() {
   painel.classList.toggle("fechado");
 }
 
-function toggleCarrinho() {
-  const painel = document.getElementById("painelCarrinho");
-  if(painel.classList.contains("aberto")) {
-    painel.classList.remove("aberto");
-    painel.classList.add("fechado");
-  } else {
-    painel.classList.remove("fechado");
-    painel.classList.add("aberto");
-  }
-}
-
       
       
       
