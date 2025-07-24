@@ -1027,48 +1027,6 @@ html {
 }
 
 
-@media (max-width: 600px) {
-  .painel-carrinho {
-    width: 80%;
-    right: 0;
-    top: 0;
-    height: 100%;
-    position: fixed;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    overflow-y: auto;
-    z-index: 9999;
-  }
 
-  .carrinho-fixo {
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
-    background: #ff4081;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    cursor: pointer;
-    z-index: 10000;
-  }
-}
 
-@media (max-width: 600px) {
-  .card-produto {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-}
 
-.painel-carrinho {
-  right: -300px;
-  transition: right 0.3s ease;
-}
-
-.painel-carrinho.aberto {
-  right: 0;
-}
-
-.painel-carrinho.fechado {
-  right: -300px;
-}
